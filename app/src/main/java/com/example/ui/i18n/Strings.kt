@@ -1,0 +1,147 @@
+package com.example.ui.i18n
+
+object Strings {
+    private val translations = mapOf(
+        "app_title" to Pair("GlobalSEO Engine", "গ্লোবাল এসইও ইঞ্জিন"),
+        "dashboard" to Pair("Dashboard", "ড্যাশবোর্ড"),
+        "remote_job" to Pair("Remote Job", "রিমোট জব"),
+        "deposit" to Pair("Deposit", "ডিপোজিট"),
+        "withdrawal" to Pair("Withdrawal", "উইথড্রল"),
+        "profile" to Pair("Profile", "প্রোফাইল"),
+        "about" to Pair("About", "এবাউট"),
+        "referral" to Pair("Referral", "রেফারেল"),
+        "admin" to Pair("Admin Panel", "অ্যাডমিন প্যানেল"),
+        "sign_out" to Pair("Sign Out", "লগআউট"),
+        "login" to Pair("Login", "লগইন"),
+        "register" to Pair("Register", "রেজিস্ট্রেশন"),
+        "email" to Pair("Email Address", "ইমেইল অ্যাড্রেস"),
+        "password" to Pair("Password", "পাসওয়ার্ড"),
+        "confirm_password" to Pair("Confirm Password", "কনফার্ম পাসওয়ার্ড"),
+        "referral_code_optional" to Pair("Referral Code (Optional)", "রেফারেল কোড (ঐচ্ছিক)"),
+        "forgot_password" to Pair("Forgot Password?", "পাসওয়ার্ড ভুলে গেছেন?"),
+        "dont_have_account" to Pair("Don't have an account? Register", "অ্যাকাউন্ট নেই? রেজিস্ট্রেশন করুন"),
+        "already_have_account" to Pair("Already have an account? Login", "ইতিমধ্যে অ্যাকাউন্ট আছে? লগইন করুন"),
+        "reset_password_instruction" to Pair("Enter your email address to receive a password reset link.", "পাসওয়ার্ড রিসেট লিংক পেতে আপনার ইমেইল প্রদান করুন।"),
+        "send_reset_link" to Pair("Send Reset Link", "রিসেট লিংক পাঠান"),
+        "cancel" to Pair("Cancel", "বাতিল"),
+        "submit" to Pair("Submit", "সাবমিট করুন"),
+        "save" to Pair("Save", "সংরক্ষণ করুন"),
+        "close" to Pair("Close", "বন্ধ করুন"),
+        "ok" to Pair("OK", "ঠিক আছে"),
+        "error" to Pair("Error", "ত্রুটি"),
+        "success" to Pair("Success", "সফল"),
+
+        // Dashboard
+        "current_balance" to Pair("Current Coin Balance", "বর্তমান কয়েন ব্যালেন্স"),
+        "completed_jobs" to Pair("Completed Jobs", "সম্পন্ন করা কাজ"),
+        "available_jobs" to Pair("Available Jobs", "চলমান রিমোট কাজ"),
+        "total_withdrawals" to Pair("Withdrawals Count", "উইথড্রর সংখ্যা"),
+        "total_deposits" to Pair("Deposits Count", "ডিপোজিট সংখ্যা"),
+        "quick_actions" to Pair("Quick Actions", "দ্রুত অ্যাকশন"),
+        "earn_coins" to Pair("Earn Coins", "কয়েন আয় করুন"),
+        "add_funds" to Pair("Add Funds", "টাকা যোগ করুন"),
+        "cash_out" to Pair("Cash Out", "উইথড্র করুন"),
+        "activity_chart" to Pair("7-Day Coin Activity", "৭ দিনের কয়েন উপার্জনের গ্রাফ"),
+        "notice_board" to Pair("Notice Board", "জরুরি নোটিশ"),
+        "platform_statistics" to Pair("Platform Statistics", "প্ল্যাটফর্ম পরিসংখ্যান"),
+        "sync_status" to Pair("Encrypted & Synced Locally", "এনক্রিপ্টেড ও লোকালি সংরক্ষিত"),
+
+        // Remote Job
+        "remote_jobs_title" to Pair("Remote Promotion Jobs", "রিমোট প্রমোশন কাজ"),
+        "reward_coins" to Pair("Reward: 10 Coins", "পুরস্কার: ১০ কয়েন"),
+        "visit_now" to Pair("Visit & Earn", "ভিজিট করুন"),
+        "visit_details_notice" to Pair("Stay 2 minutes on the page to collect reward coins. Anti-cheat is active.", "পৃষ্ঠায় ২ মিনিট (১২০ সেকেন্ড) অপেক্ষা করুন কয়েন সংগ্রহের জন্য। অ্যান্টি-চিট সক্রিয়।"),
+        "filter_all" to Pair("All", "সকল"),
+        "filter_website_blogger" to Pair("Website / Blogger", "ওয়েবসাইট / ব্লগার"),
+        "filter_youtube" to Pair("YouTube", "ইউটিউব"),
+        "no_jobs_available" to Pair("No jobs available right now. Check back soon!", "বর্তমানে কোনো কাজ নেই। কিছুক্ষণ পর আবার চেষ্টা করুন!"),
+        "job_completed_badge" to Pair("Completed", "সম্পন্ন হয়েছে"),
+        "claim_reward" to Pair("Claim 10 Coins", "১০ কয়েন সংগ্রহ করুন"),
+        "timer_waiting" to Pair("Seconds remaining: ", "অবশিষ্ট সময়: "),
+        "cheat_warning" to Pair("Warning: Do not minimize or leave the app during countdown!", "সতর্কতা: কাউন্টডাউন চলাকালে অ্যাপ বন্ধ বা ব্যাকগ্রাউন্ডে নিবেন না!"),
+
+        // Deposit
+        "deposit_title" to Pair("Deposit Coins", "কয়েন ডিপোজিট"),
+        "deposit_send_money_instruction" to Pair("Bkash & Nagad Send Money to:", "বিকাশ এবং নগদ সেন্ড মানি করুন এই নম্বরে:"),
+        "send_money_number" to Pair("01627096941", "01627096941"),
+        "send_money_only_tag" to Pair("Send Money Only", "শুধুমাত্র সেন্ড মানি"),
+        "copied_to_clipboard" to Pair("Copied to clipboard!", "নম্বর কপি করা হয়েছে!"),
+        "select_package" to Pair("Select Coin Package", "কয়েন প্যাকেজ সিলেক্ট করুন"),
+        "select_method" to Pair("Select Payment Method", "পেমেন্ট মাধ্যম সিলেক্ট করুন"),
+        "bkash" to Pair("bKash", "বিকাশ"),
+        "nagad" to Pair("Nagad", "নগদ"),
+        "sender_number" to Pair("Sender Mobile Number", "প্রেরকের মোবাইল নম্বর"),
+        "trx_id" to Pair("Transaction ID (TrxID)", "ট্রানজেকশন আইডি (TrxID)"),
+        "deposit_approval_notice" to Pair("Your deposit will be verified and approved within 2 to 3 hours.", "২ থেকে ৩ ঘণ্টার ভিতরে ডিপোজিট ভেরিফাই করে অ্যাপ্রুভ করা হবে।"),
+        "deposit_history" to Pair("Deposit History", "ডিপোজিট হিস্টোরি"),
+        "status_pending" to Pair("Pending", "পেন্ডিং"),
+        "status_approved" to Pair("Approved", "অনুমোদিত"),
+        "status_rejected" to Pair("Rejected", "বাতিল"),
+        "duplicate_trx_error" to Pair("This Transaction ID has already been submitted!", "এই ট্রানজেকশন আইডি ইতিমধ্যে সাবমিট করা হয়েছে!"),
+
+        // Withdrawal
+        "withdrawal_title" to Pair("Withdraw Earnings", "উপার্জন উইথড্র করুন"),
+        "select_withdraw_package" to Pair("Select Withdrawal Amount", "উইথড্র পরিমাণ সিলেক্ট করুন"),
+        "receiver_number" to Pair("Account Mobile Number", "উইথড্র গ্রহণকারী মোবাইল নম্বর"),
+        "withdraw_notice" to Pair("Requests are sent directly to the Admin. Verification will be processed promptly.", "রিকোয়েস্ট সরাসরি অ্যাডমিন পৃষ্ঠায় চলে যাবে এবং দ্রুত প্রসেস করা হবে।"),
+        "insufficient_balance" to Pair("Insufficient coin balance!", "পর্যাপ্ত কয়েন ব্যালেন্স নেই!"),
+        "withdrawal_history" to Pair("Withdrawal History", "উইথড্রল হিস্টোরি"),
+
+        // Profile
+        "profile_title" to Pair("My Profile", "আমার প্রোফাইল"),
+        "display_name" to Pair("Display Name", "নাম"),
+        "edit_name" to Pair("Change Name (Once Only)", "নাম পরিবর্তন করুন (শুধুমাত্র একবার)"),
+        "name_already_changed" to Pair("Name has already been changed once!", "নাম ইতিমধ্যে একবার পরিবর্তন করা হয়েছে!"),
+        "create_job_title" to Pair("Promote Your Website / YouTube", "নিজের ওয়েবসাইট / ইউটিউব প্রচার করুন"),
+        "create_job_subtitle" to Pair("100 Coins setup fee + 20 Coins per visitor", "১০০ কয়েন সেটআপ ফি + প্রতি ভিজিটে ২০ কয়েন"),
+        "job_title_input" to Pair("Job / Campaign Title", "ক্যাম্পেইন শিরোনাম"),
+        "job_url_input" to Pair("Website or YouTube URL", "ওয়েবসাইট বা ইউটিউব লিংক"),
+        "job_category_input" to Pair("Category", "ক্যাটাগরি"),
+        "target_visitors" to Pair("Number of Visitors", "কতগুলো ভিজিটর চান"),
+        "total_cost" to Pair("Total Cost: ", "মোট খরচ: "),
+        "publish_job" to Pair("Publish Campaign", "ক্যাম্পেইন পোস্ট করুন"),
+        "invalid_url_error" to Pair("Please provide a valid Website/Blogger or YouTube URL!", "সঠিক ওয়েবসাইট/ব্লগার বা ইউটিউব লিঙ্ক প্রদান করুন!"),
+
+        // About
+        "about_title" to Pair("About GlobalSEO Engine", "গ্লোবাল এসইও ইঞ্জিন সম্পর্কে"),
+        "developer_label" to Pair("Developer: ", "অ্যাপ ডেভেলপার: "),
+        "facebook_btn" to Pair("Visit Facebook Profile", "ফেসবুক প্রোফাইল দেখুন"),
+        "whatsapp_btn" to Pair("Chat on WhatsApp", "হোয়াটসঅ্যাপে যোগাযোগ করুন"),
+        "contact_us" to Pair("Contact & Support", "যোগাযোগ ও সাপোর্ট"),
+
+        // Referral
+        "referral_title" to Pair("Refer & Earn", "রেফার করুন এবং আয় করুন"),
+        "your_referral_code" to Pair("Your 6-Digit Referral Code", "আপনার ৬ ডিজিটের রেফার কোড"),
+        "copy_code" to Pair("Copy Code", "কোড কপি করুন"),
+        "share_code" to Pair("Share Code", "বন্ধুদের সাথে শেয়ার করুন"),
+        "referral_reward_info" to Pair("For every friend you refer, you earn 50 Coins! Your friend gets 50 Welcome Coins + 10 Referral Coins (Total 60 Coins)!", "আপনার রেফার কোড দিয়ে কেউ একাউন্ট খুললে আপনি পাবেন ৫০ কয়েন এবং নতুন ব্যবহারকারী পাবে বোনাস ৫০ + রেফার বোনাস ১০ = মোট ৬০ কয়েন!"),
+        "total_referrals" to Pair("Total Friends Referred", "মোট রেফার করা বন্ধু"),
+        "total_referral_coins" to Pair("Referral Earnings", "রেফারেল থেকে মোট আয়"),
+
+        // Admin
+        "admin_title" to Pair("Admin Control Panel", "অ্যাডমিন কন্ট্রোল প্যানেল"),
+        "admin_access_denied" to Pair("Access Denied: Only authorized admin email can access this page.", "এক্সেস ডিনাইড: শুধুমাত্র অনুমোদিত অ্যাডমিন ইমেইল দিয়েই এই পৃষ্ঠা অ্যাক্সেস করা যাবে।"),
+        "pending_deposits_tab" to Pair("Deposits", "ডিপোজিট"),
+        "pending_withdrawals_tab" to Pair("Withdrawals", "উইথড্রল"),
+        "users_tab" to Pair("Users", "ব্যবহারকারী"),
+        "jobs_tab" to Pair("Jobs", "রিমোট জব"),
+        "settings_tab" to Pair("Settings", "সেটিংস"),
+        "approve" to Pair("Approve", "অনুমোদন"),
+        "reject" to Pair("Reject", "বাতিল"),
+        "block_user" to Pair("Block Account", "অ্যাকাউন্ট ব্লক করুন"),
+        "unblock_user" to Pair("Unblock Account", "আনব্লক করুন"),
+        "modify_balance" to Pair("Modify Coin Balance", "কয়েন পরিবর্তন করুন"),
+        "delete_job" to Pair("Delete Campaign", "কাজ মুছে ফেলুন"),
+        "init_firestore_btn" to Pair("Initialize Firestore Collections", "ফায়ারস্টোর কালেকশন প্রস্তুত করুন"),
+        "firestore_init_success" to Pair("Firestore collections initialized successfully!", "ফায়ারস্টোর কালেকশন সফলভাবে প্রস্তুত হয়েছে!"),
+        "admin_email_setting" to Pair("Admin Email Address", "অ্যাডমিন ইমেইল এড্রেস"),
+        "firebase_api_setting" to Pair("Firebase API & Config", "ফায়ারবেস এপিআই ও কনফিগারেশন"),
+        "about_notice_setting" to Pair("About Section Notice", "এবাউট সেকশন নোটিশ"),
+        "developer_name_setting" to Pair("Developer Name", "ডেভেলপারের নাম")
+    )
+
+    fun get(key: String, language: AppLanguage): String {
+        val pair = translations[key] ?: return key
+        return if (language == AppLanguage.BANGLA) pair.second else pair.first
+    }
+}
